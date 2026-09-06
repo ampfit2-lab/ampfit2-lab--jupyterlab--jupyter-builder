@@ -1,0 +1,29 @@
+version: 2
+updates:
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      actions:
+        patterns:
+          - "*"
+  # Python
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      pip:
+        patterns:
+          - "*"
+  # JavaScript/TypeScript
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@jupyterlab/core-meta"
+      - dependency-name: "@rspack/core"

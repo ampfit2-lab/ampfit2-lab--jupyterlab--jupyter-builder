@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "preserveWatchOutput": true,
+    "resolveJsonModule": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "strictNullChecks": true,
+    "target": "ES2018",
+    "lib": ["DOM", "DOM.Iterable", "ES2018", "ES2020.Intl"],
+    "sourceMap": true,
+    "types": []
+  },
+  "include": ["src/*", "src/metadata_schema.json"],
+  "references": []
+}
